@@ -33,10 +33,6 @@ label {
 .main-background {
 	background: #09223e;
 }
-.main-top {
-	padding-bottom: 20px;
-}
-
 .logo {
 	margin-bottom: 20px;
 }
@@ -64,9 +60,6 @@ label {
 }
 
 /*NAVIGATION*/
-.main-navigation {
-	margin-top: -20px;
-}
 .navbar {
 	min-height: auto;
 }
@@ -243,6 +236,11 @@ label {
 	}
 }
 
+/*VESTI*/
+.vest-wrap {
+	position: relative;
+	overflow: hidden;
+}
 /*FOOTER*/
 footer {
 	padding-top: 20px;

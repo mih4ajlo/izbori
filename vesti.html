@@ -17,28 +17,11 @@
         <!-- <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"></link> -->
 
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href=",/izborni.css">
+        <link rel="stylesheet" type="text/css" href="izborni.css">
         
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
-      <script type="text/javascript">
-          
-          function stickyFooter() {
-        if ($("body").outerHeight() < $(window).height()) {
-            $("footer").addClass("sticky-footer");
-        } else {
-            $("footer").removeClass("sticky-footer");
-        }
-    }
-
-    $(document).ready(function() {
-        stickyFooter();
-    });
-
-    $(window).resize(function() {
-        stickyFooter();
-    });
-      </script>
+      
     </head>
     <body>
         
@@ -51,11 +34,7 @@
                     </a>
                 </h1>
             </header>
-           
-            
-            
-        </section>
-        <section class="container main-navigation">
+            <section class="container main-navigation">
             <nav class="navbar navbar-default">
                 <div class="container-fluid">
                     <div class="navbar-header">
@@ -107,8 +86,13 @@
                 </div><!-- /.container-fluid -->
             </nav>
         </section>
+           
+            
+            
+        </section>
+        
 
-        <section class="container main-content"><h1>Vesti</h1>	<div>
+        <section class="container main-content"><h1>Vesti</h1>	<div class="vest-wrap">
     	<a href="http://www.istinomer.rs/clanak/1452/Istinomer-prati-izbore">
     	    <div class="stranka-wrap">
     	        <div class="row">
@@ -124,7 +108,7 @@
     	</a>
     </div>
 
-	<div>
+	<div class="vest-wrap">
     	<a href="http://www.istinomer.rs/clanak/1451/Predsednica-niske-izborne-komisije-nije-u-sukobu-interesa">
     	    <div class="stranka-wrap">
     	        <div class="row">
@@ -140,7 +124,7 @@
     	</a>
     </div>
 
-	<div>
+	<div class="vest-wrap">
     	<a href="http://www.istinomer.rs/clanak/1446/Preletaci-urusavanje-izbornog-sistema">
     	    <div class="stranka-wrap">
     	        <div class="row">
@@ -156,7 +140,7 @@
     	</a>
     </div>
 
-	<div>
+	<div class="vest-wrap">
     	<a href="http://www.istinomer.rs/clanak/1441/MMF-i-izbori-od-mrzitelja-do-prijatelja">
     	    <div class="stranka-wrap">
     	        <div class="row">
@@ -172,7 +156,7 @@
     	</a>
     </div>
 
-	<div>
+	<div class="vest-wrap">
     	<a href="http://www.istinomer.rs/clanak/1438/SPS-rekorder-po-broju-mandata-Ljajic-ministar-vec-15-godina">
     	    <div class="stranka-wrap">
     	        <div class="row">
@@ -188,7 +172,7 @@
     	</a>
     </div>
 
-	<div>
+	<div class="vest-wrap">
     	<a href="http://www.istinomer.rs/clanak/1437/SPS-rekorder-po-broju-mandata-Ljajic-ministar-vec-15-godina">
     	    <div class="stranka-wrap">
     	        <div class="row">
@@ -223,7 +207,25 @@
                 </div>
             </div>
         </footer>
+        
+        <script type="text/javascript">
+                  
+                  function stickyFooter() {
+                if ($("body").outerHeight() < $(window).height()) {
+                    $("footer").addClass("sticky-footer");
+                } else {
+                    $("footer").removeClass("sticky-footer");
+                }
+            }
 
+            $(document).ready(function() {
+                stickyFooter();
+            });
+
+            $(window).resize(function() {
+                stickyFooter();
+            });
+              </script>
         
     </body>
 </html>
